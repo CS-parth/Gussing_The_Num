@@ -5,12 +5,13 @@ function Getrandomintegernumber(min,max){
     max = Math.floor(max);
     return Math.floor(Math.random()*(max-min+1) + min);
 }
-let a = Getrandomintegernumber(0,10);
+let a = Getrandomintegernumber(0,100);
 while(1){
 let b = prompt("Enter your number which comes in your mind for the game : ");
 //console.log("The lucky number is : ",a);
 if(a == b){
     console.log("Hurray!!!!!!!!!!!!!!!!!");
+    break;
 }
 else{
     if(a > b){
