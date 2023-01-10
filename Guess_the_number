@@ -1,0 +1,23 @@
+// Guess the number
+const prompt = require("prompt-sync")();
+function Getrandomintegernumber(min,max){
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random()*(max-min+1) + min);
+}
+let a = Getrandomintegernumber(0,10);
+while(1){
+let b = prompt("Enter your number which comes in your mind for the game : ");
+//console.log("The lucky number is : ",a);
+if(a == b){
+    console.log("Hurray!!!!!!!!!!!!!!!!!");
+}
+else{
+    if(a > b){
+        console.log("Your nummber is less");
+    }
+    else{
+        console.log("Your nummber is greater");
+    }
+}
+}
